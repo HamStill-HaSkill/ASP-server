@@ -49,8 +49,6 @@ namespace FoodApp
                         name: "default",
                         pattern: "{controller=Recipes}/{action=TopRate}/{id?}");
             });
-
-
         }
     }
 }

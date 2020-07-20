@@ -1336,20 +1336,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Xiaomi\\.nuget\\packages\\": {}
+    "C:\\Users\\konst_9hggwum\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Xiaomi\\Desktop\\Новая папка (2)\\ASP-server\\FoodApp\\FoodApp.csproj",
+      "projectUniqueName": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\some\\ASP-server\\FoodApp\\FoodApp.csproj",
       "projectName": "FoodApp",
-      "projectPath": "C:\\Users\\Xiaomi\\Desktop\\Новая папка (2)\\ASP-server\\FoodApp\\FoodApp.csproj",
-      "packagesPath": "C:\\Users\\Xiaomi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Xiaomi\\Desktop\\Новая папка (2)\\ASP-server\\FoodApp\\obj\\",
+      "projectPath": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\some\\ASP-server\\FoodApp\\FoodApp.csproj",
+      "packagesPath": "C:\\Users\\konst_9hggwum\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\some\\ASP-server\\FoodApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Xiaomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\konst_9hggwum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1395,12 +1402,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1409,7 +1410,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -1418,7 +1419,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Microsoft.Extensions.Primitives 2.0.0-preview1-final зависит от System.Runtime.CompilerServices.Unsafe (>= 4.4.0-preview1-25219-04), но System.Runtime.CompilerServices.Unsafe 4.4.0-preview1-25219-04 не найден. Использовано наилучшее приближенное соответствие System.Runtime.CompilerServices.Unsafe 4.4.0-preview1-25305-02.",
+      "message": "Microsoft.Extensions.Primitives 2.0.0-preview1-final depends on System.Runtime.CompilerServices.Unsafe (>= 4.4.0-preview1-25219-04) but System.Runtime.CompilerServices.Unsafe 4.4.0-preview1-25219-04 was not found. An approximate best match of System.Runtime.CompilerServices.Unsafe 4.4.0-preview1-25305-02 was resolved.",
       "libraryId": "System.Runtime.CompilerServices.Unsafe",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
