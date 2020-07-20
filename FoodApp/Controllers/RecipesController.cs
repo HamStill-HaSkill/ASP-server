@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 namespace FoodApp.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class RecipesController : Controller
     {
         // создаем контекст данных
@@ -37,11 +37,15 @@ namespace FoodApp.Controllers
                 return allRecipes.Take(0);
             }
         }
+        [HttpGet]
+        public IEnumerable<Recipe> AllRecipes()
+        {                
+            return db.Recipes.ToList();
+        }
 
         [HttpPost]
         public string AddRecipes()
         {
-            // db.SaveChangesAsync();
             return "OK";
         }
     }

@@ -40,12 +40,6 @@ namespace FoodApp
                 context.Add( new Recipe { Name = "Торт", ImageName = "https://static.1000.menu/img/content/36945/sochnyi-biskvitnyi-tort_1563566405_9_max.jpg", 
                                         Type = "basic",  Description = "Есть пробитие", Category = "food", Likes = 6});
                 context.SaveChanges();
-
-                Console.WriteLine ("Current database content");
-                var allRecipes = context.Recipes.ToList();
-                foreach (var item in allRecipes) {
-                    Console.WriteLine ($"{item}");
-                }
             }
             CreateHostBuilder(args).Build().Run();
         }

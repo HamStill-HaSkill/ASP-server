@@ -42,14 +42,12 @@ namespace FoodApp
             }
             app.UseStatusCodePages();
             app.UseRouting();
-            // app.UseHsts();
-            // app.UseHttpsRedirection();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                         name: "default",
-                        pattern: "{controller=Home}/{action=Index}/{id?}");
+                        pattern: "{controller=Recipes}/{action=TopRate}/{id?}");
             });
 
 
