@@ -23,14 +23,12 @@ namespace FoodApp.Controllers
             db = context;
         }
 
-        //[Route("Recipes/AllRecipes")]
         [HttpGet]
         public JsonResult AllRecipes()
         {                
             return Json(db.Recipes.ToList());
         }
 
-        //[Route("Recipes/TopRecipes")]
         [HttpGet]
         public JsonResult TopRecipes(int count = -1)
         {   
@@ -40,14 +38,12 @@ namespace FoodApp.Controllers
             return Json(allRecipes.OrderByDescending(u => u.Likes).Take(count));
         }
 
-        //[Route("Recipes/AllKind")]
         [HttpGet]
         public JsonResult AllKind(string kind)
         {                
             return Json(db.Recipes.ToList().Where(u => u.Category == kind));
         }
         
-        //[Route("Recipes/AllKind")]
         [HttpGet]
         public JsonResult TopKind(int count = -1, string kind = "food")
         {
