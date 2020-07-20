@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 namespace FoodApp.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class RecipesController : Controller
     {
         // создаем контекст данных
@@ -22,27 +22,44 @@ namespace FoodApp.Controllers
         {
             db = context;
         }
+
+        //[Route("Recipes/AllRecipes")]
         [HttpGet]
-        public IEnumerable<Recipe> TopRate(int count)
+        public JsonResult AllRecipes()
         {                
+            return Json(db.Recipes.ToList());
+        }
+
+        //[Route("Recipes/TopRecipes")]
+        [HttpGet]
+        public JsonResult TopRecipes(int count = -1)
+        {   
             var allRecipes = db.Recipes.ToList();
-            if (count <= allRecipes.Count())
-            {
-                var sortedRecipes = allRecipes.OrderByDescending(u => u.Likes);
-                string answer = JsonConvert.SerializeObject(sortedRecipes.Take(count));
-                return sortedRecipes.Take(count);
-            }
-            else 
-            {
-                return allRecipes.Take(0);
-            }
+            if (count == -1)
+                count = allRecipes.Count();
+            return Json(allRecipes.OrderByDescending(u => u.Likes).Take(count));
+        }
+
+        //[Route("Recipes/AllKind")]
+        [HttpGet]
+        public JsonResult AllKind(string kind)
+        {                
+            return Json(db.Recipes.ToList().Where(u => u.Category == kind));
+        }
+        
+        //[Route("Recipes/AllKind")]
+        [HttpGet]
+        public JsonResult TopKind(int count = -1, string kind = "food")
+        {
+            var allRecipes = db.Recipes.ToList().Where(u => u.Category == kind);
+            if (count == -1)
+                count = allRecipes.Count();
+            return Json(allRecipes.OrderByDescending(u => u.Likes).Take(count));
         }
 
         [HttpPost]
-        public string AddRecipes()
+        public void AddRecipes()
         {
-            // db.SaveChangesAsync();
-            return "OK";
         }
     }
 }
