@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,12 +25,26 @@ namespace FoodApp.Controllers
             db = context;
         }
 
+        [HttpPost]
+        [Route("Search/JsonStringBody")]
+        public string JsonStringBody(string content)
+        {
+            return content;
+        }
+
         [HttpGet]
-        public JsonResult Search()
+        public async Task<JsonResult> Search()
         {   
-            var words = Request.Body.ToString().Split(" ").Where(p => p.Length > 0);
             var allRecipes = db.Recipes.ToList();
 
+            string body = "";
+            using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
+            {  
+                body = await reader.ReadToEndAsync();
+            }
+            
+            var words = body.Split(" ").Where(p => p.Length > 0);
+            
             Func<string, bool> IsContains = delegate(string description) 
             { 
                 foreach (var word in words)
