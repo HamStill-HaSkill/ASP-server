@@ -41,11 +41,7 @@ namespace FoodApp
                                         Type = "basic",  Description = "Есть пробитие", Category = "food", Likes = 6});
                 context.SaveChanges();
 
-                Console.WriteLine ("Current database content");
                 var allRecipes = context.Recipes.ToList();
-                foreach (var item in allRecipes) {
-                    Console.WriteLine ($"{item}");
-                }
             }
             CreateHostBuilder(args).Build().Run();
         }
