@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\some\\ASP-server\\FoodApp\\FoodApp.csproj": {}
+    "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\FoodApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\some\\ASP-server\\FoodApp\\FoodApp.csproj": {
+    "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\FoodApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\some\\ASP-server\\FoodApp\\FoodApp.csproj",
+        "projectUniqueName": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\FoodApp.csproj",
         "projectName": "FoodApp",
-        "projectPath": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\some\\ASP-server\\FoodApp\\FoodApp.csproj",
+        "projectPath": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\FoodApp.csproj",
         "packagesPath": "C:\\Users\\konst_9hggwum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\some\\ASP-server\\FoodApp\\obj\\",
+        "outputPath": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
