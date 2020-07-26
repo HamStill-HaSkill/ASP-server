@@ -27,7 +27,6 @@ namespace FoodApp
         public void ConfigureServices(IServiceCollection services)
         {
             // получаем строку подключения из файла конфигурации
-            string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddScoped<IRecipeContext, RecipeContext>();
             services.AddControllersWithViews();
             services.AddControllers();

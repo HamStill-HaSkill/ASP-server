@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+//using Npgsql.EntityFrameworkCore.PostgreSQL;
 using FoodApp.Models;
 using System.Web;
 using Newtonsoft.Json;
@@ -51,11 +52,6 @@ namespace FoodApp.Controllers
             if (count == -1)
                 count = allRecipes.Count();
             return Json(allRecipes.OrderByDescending(u => u.Likes).Take(count));
-        }
-        [HttpGet]
-        public IEnumerable<Recipe> AllRecipes()
-        {
-            return db.Recipes.ToList();
         }
 
         [HttpPost]
