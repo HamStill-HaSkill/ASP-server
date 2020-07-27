@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+//using Npgsql.EntityFrameworkCore.PostgreSQL;
 using FoodApp.Models;
 using System.Web;
 using Newtonsoft.Json;
@@ -25,13 +26,13 @@ namespace FoodApp.Controllers
 
         [HttpGet]
         public JsonResult AllRecipes()
-        {                
+        {
             return Json(db.Recipes.ToList());
         }
 
         [HttpGet]
         public JsonResult TopRecipes(int count = -1)
-        {   
+        {
             var allRecipes = db.Recipes.ToList();
             if (count == -1)
                 count = allRecipes.Count();
@@ -40,10 +41,10 @@ namespace FoodApp.Controllers
 
         [HttpGet]
         public JsonResult AllKind(string kind)
-        {                
+        {
             return Json(db.Recipes.ToList().Where(u => u.Category == kind));
         }
-        
+
         [HttpGet]
         public JsonResult TopKind(int count = -1, string kind = "food")
         {

@@ -27,7 +27,6 @@ namespace FoodApp
         public void ConfigureServices(IServiceCollection services)
         {
             // получаем строку подключения из файла конфигурации
-            string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddScoped<IRecipeContext, RecipeContext>();
             services.AddControllersWithViews();
             services.AddControllers();
@@ -42,14 +41,12 @@ namespace FoodApp
             }
             app.UseStatusCodePages();
             app.UseRouting();
-            // app.UseHsts();
-            // app.UseHttpsRedirection();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                         name: "default",
-                        pattern: "{controller=Home}/{action=Index}/{id?}");
+                        pattern: "{controller=Recipes}/{action=TopRate}/{id?}");
             });
         }
     }
