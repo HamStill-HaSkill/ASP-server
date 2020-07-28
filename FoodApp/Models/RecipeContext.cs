@@ -8,7 +8,7 @@ namespace FoodApp.Models
         public DbSet<Recipe> Recipes { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=recipesdb;Username=postgres;Password=admin");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=recipesdb;Username=postgres;Password=Filthgrinder666");
         }
     }
 }

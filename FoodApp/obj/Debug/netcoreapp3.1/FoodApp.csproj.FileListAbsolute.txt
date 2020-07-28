@@ -248,3 +248,5 @@ C:\Users\konst_9hggwum\OneDrive\Desktop\ASP-server\FoodApp\obj\Debug\netcoreapp3
 C:\Users\konst_9hggwum\OneDrive\Desktop\ASP-server\FoodApp\obj\Debug\netcoreapp3.1\FoodApp.pdb
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Npgsql.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\konst_9hggwum\OneDrive\Desktop\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\konst_9hggwum\OneDrive\Desktop\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
