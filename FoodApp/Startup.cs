@@ -9,7 +9,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Identity;
 using FoodApp.Models;
+using FoodApp.Data;
 
 
 namespace FoodApp
@@ -26,7 +28,11 @@ namespace FoodApp
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            // получаем строку подключения из файла конфигурации
+            services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(
+                    Configuration.GetConnectionString("UserConnection")));
+            //services.AddIdentity<IdentityUser, IdentityRole>(options => options.User.RequireUniqueEmail = false);
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddScoped<IRecipeContext, RecipeContext>();
             services.AddControllersWithViews();
             services.AddControllers();
@@ -41,7 +47,9 @@ namespace FoodApp
             }
             app.UseStatusCodePages();
             app.UseRouting();
+            app.UseAuthentication();
             app.UseAuthorization();
+  
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

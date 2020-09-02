@@ -29,7 +29,6 @@ D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFramewor
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
@@ -38,29 +37,12 @@ D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Con
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\System.Text.Json.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
-D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Xiaomi\Desktop\Новая папка (2)\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Xiaomi\Desktop\Новая папка (2)\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Xiaomi\Desktop\Новая папка (2)\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -250,3 +232,9 @@ D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Npgsql.dll
 D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\konst_9hggwum\OneDrive\Desktop\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Npgsql.dll
 C:\Users\konst_9hggwum\OneDrive\Desktop\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Progi\ASP\ASP-server\FoodApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

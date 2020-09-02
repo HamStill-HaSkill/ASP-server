@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\FoodApp.csproj": {}
+    "D:\\Progi\\ASP\\ASP-server\\FoodApp\\FoodApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\FoodApp.csproj": {
+    "D:\\Progi\\ASP\\ASP-server\\FoodApp\\FoodApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\FoodApp.csproj",
+        "projectUniqueName": "D:\\Progi\\ASP\\ASP-server\\FoodApp\\FoodApp.csproj",
         "projectName": "FoodApp",
-        "projectPath": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\FoodApp.csproj",
-        "packagesPath": "C:\\Users\\konst_9hggwum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\obj\\",
+        "projectPath": "D:\\Progi\\ASP\\ASP-server\\FoodApp\\FoodApp.csproj",
+        "packagesPath": "C:\\Users\\Xiaomi\\.nuget\\packages\\",
+        "outputPath": "D:\\Progi\\ASP\\ASP-server\\FoodApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\konst_9hggwum\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Xiaomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -43,7 +38,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Sqlite": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[3.1.6, )"
             },
@@ -70,6 +69,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -78,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

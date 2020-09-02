@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\konst_9hggwum\\OneDrive\\Desktop\\ASP-server\\FoodApp\\FoodApp.csproj",
+  "FilePath": "d:\\Progi\\ASP\\ASP-server\\FoodApp\\FoodApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20516,7 +20516,7 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 703
+    "CSharpLanguageVersion": 800
   },
   "RootNamespace": "FoodApp",
   "Documents": [],

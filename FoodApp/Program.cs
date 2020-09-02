@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using FoodApp.Models;
+using FoodApp.Data;
 
 
 namespace FoodApp
@@ -43,6 +44,10 @@ namespace FoodApp
 
                 var allRecipes = context.Recipes.ToList();
             }
+            // using (var context = new ApplicationDbContext(new DbContextOptions<ApplicationDbContext>())) 
+            // {
+
+            // }
             CreateHostBuilder(args).Build().Run();
         }
 
