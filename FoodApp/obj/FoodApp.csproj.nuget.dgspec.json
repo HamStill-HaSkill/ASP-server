@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Progi\\ASP\\ASP-server\\FoodApp\\FoodApp.csproj": {}
+    "D:\\Progi\\ASP\\ASP-Reborn\\ASP-server\\FoodApp\\FoodApp.csproj": {}
   },
   "projects": {
-    "D:\\Progi\\ASP\\ASP-server\\FoodApp\\FoodApp.csproj": {
+    "D:\\Progi\\ASP\\ASP-Reborn\\ASP-server\\FoodApp\\FoodApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progi\\ASP\\ASP-server\\FoodApp\\FoodApp.csproj",
+        "projectUniqueName": "D:\\Progi\\ASP\\ASP-Reborn\\ASP-server\\FoodApp\\FoodApp.csproj",
         "projectName": "FoodApp",
-        "projectPath": "D:\\Progi\\ASP\\ASP-server\\FoodApp\\FoodApp.csproj",
+        "projectPath": "D:\\Progi\\ASP\\ASP-Reborn\\ASP-server\\FoodApp\\FoodApp.csproj",
         "packagesPath": "C:\\Users\\Xiaomi\\.nuget\\packages\\",
-        "outputPath": "D:\\Progi\\ASP\\ASP-server\\FoodApp\\obj\\",
+        "outputPath": "D:\\Progi\\ASP\\ASP-Reborn\\ASP-server\\FoodApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Xiaomi\\AppData\\Roaming\\NuGet\\NuGet.Config",

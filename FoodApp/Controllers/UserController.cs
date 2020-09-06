@@ -9,6 +9,7 @@ using FoodApp.Data;
 using Microsoft.AspNetCore.Identity;
 using Newtonsoft.Json;
 using FoodApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace FoodApp.Controllers
@@ -18,6 +19,7 @@ namespace FoodApp.Controllers
     public class UserController : Controller
     {
         UserManager<IdentityUser> _userManager;
+        
         public UserController(UserManager<IdentityUser> manager)
         {
             _userManager = manager;
@@ -25,10 +27,11 @@ namespace FoodApp.Controllers
         [HttpGet]
         public JsonResult AllUsers()
         {            
-            return Json(_userManager.Users.ToList());
+            var lis = _userManager.Users.ToList();
+            return Json("sad");
         }
 
-        [HttpPost]
+        [HttpGet]
         public async void AddUser()
         {
             string body = "";
@@ -37,9 +40,9 @@ namespace FoodApp.Controllers
                 body = await reader.ReadToEndAsync();
             }
             //IdentityUser user = JsonConvert.DeserializeObject<IdentityUser>(body);
-            IdentityUser user  = new IdentityUser();
-            user.Email = "qwerty";
-            await _userManager.CreateAsync(user);
+            IdentityUser user = new IdentityUser { Email = "model.Email", UserName = "model.Email"};
+            await _userManager.CreateAsync(user, "asdasd23323SAaS!!as");
+
         }
     }
 
