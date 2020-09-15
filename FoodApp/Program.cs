@@ -42,7 +42,7 @@ namespace FoodApp
                                         Type = "basic",  Description = "Есть пробитие", Category = "food", Likes = 6});
                 context.SaveChanges();
 
-                var allRecipes = context.Recipes.ToList();
+                //var allRecipes = context.Recipes.ToList();
             }
             // using (var context = new ApplicationDbContext(new DbContextOptions<ApplicationDbContext>())) 
             // {

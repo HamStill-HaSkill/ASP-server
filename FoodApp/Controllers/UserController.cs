@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Newtonsoft.Json;
 using FoodApp.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 
 namespace FoodApp.Controllers
@@ -28,12 +29,28 @@ namespace FoodApp.Controllers
         public JsonResult AllUsers()
         {            
             var lis = _userManager.Users.ToList();
-            return Json("sad");
+            return Json(lis);
         }
 
         [HttpGet]
         public async void AddUser()
         {
+            //  using (var context = new ApplicationDbContext()) {
+
+            //     //The line below clears and resets the databse.
+            //     context.Database.EnsureDeleted();
+            //     UserStore<IdentityUser> store = new UserStore<IdentityUser>(context);
+            //     //UserManager<IdentityUser> manager = new UserManager<IdentityUser>(store, new IdentityOptions(), new PasswordHasher<IdentityUser>());
+
+            //     // Create the database if it does not exist
+            //     context.Database.EnsureCreated ();
+
+            //     // Add some video games.
+            //     //Note that the Id field is autoincremented by default
+            //     context.SaveChanges();
+
+            //     //var allRecipes = context.Recipes.ToList();
+            // }
             string body = "";
             using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
             {  

@@ -39,7 +39,7 @@ namespace FoodApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApplicationDbContext context, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             if (env.IsDevelopment())
             {
@@ -49,6 +49,7 @@ namespace FoodApp
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+            DbInitializer.Initialize(context, userManager, roleManager).Wait();
   
             app.UseEndpoints(endpoints =>
             {
