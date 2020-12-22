@@ -20,10 +20,16 @@ namespace FoodApp.Controllers
     public class UserController : Controller
     {
         UserManager<IdentityUser> _userManager;
+        SignInManager<IdentityUser> _signInManager;
+        private String GetStatusCode()
+        {
+            return "401";
+        }
         
-        public UserController(UserManager<IdentityUser> manager)
+        public UserController(UserManager<IdentityUser> manager, SignInManager<IdentityUser> signInManager)
         {
             _userManager = manager;
+            _signInManager = signInManager;
         }
         [HttpGet]
         public JsonResult AllUsers()
@@ -32,34 +38,45 @@ namespace FoodApp.Controllers
             return Json(lis);
         }
 
-        [HttpGet]
-        public async void AddUser()
+        [HttpPost]
+        public async Task<IActionResult> Register()
         {
-            //  using (var context = new ApplicationDbContext()) {
-
-            //     //The line below clears and resets the databse.
-            //     context.Database.EnsureDeleted();
-            //     UserStore<IdentityUser> store = new UserStore<IdentityUser>(context);
-            //     //UserManager<IdentityUser> manager = new UserManager<IdentityUser>(store, new IdentityOptions(), new PasswordHasher<IdentityUser>());
-
-            //     // Create the database if it does not exist
-            //     context.Database.EnsureCreated ();
-
-            //     // Add some video games.
-            //     //Note that the Id field is autoincremented by default
-            //     context.SaveChanges();
-
-            //     //var allRecipes = context.Recipes.ToList();
-            // }
             string body = "";
             using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
             {  
                 body = await reader.ReadToEndAsync();
             }
-            //IdentityUser user = JsonConvert.DeserializeObject<IdentityUser>(body);
-            IdentityUser user = new IdentityUser { Email = "model.Email", UserName = "model.Email"};
-            await _userManager.CreateAsync(user, "asdasd23323SAaS!!as");
+            IdentityUser user = JsonConvert.DeserializeObject<IdentityUser>(body);
+            var result = await _userManager.CreateAsync( user, "asdasd23323SAaS!!as");
+            if (result.Succeeded)
+            {
+                return StatusCode(200);
+            }
+            else 
+            {
+                return StatusCode(403);  
+            }
 
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login()
+        {
+            string body = "";
+            using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
+            {  
+                body = await reader.ReadToEndAsync();
+            }
+            IdentityUser user = JsonConvert.DeserializeObject<IdentityUser>(body);
+            var result = await _signInManager.PasswordSignInAsync(user.UserName, "asdasd23323SAaS!!as", false, false);
+            if (result.Succeeded)
+            {
+                return StatusCode(200);
+            }
+            else 
+            {
+                return StatusCode(401);  
+            }
         }
     }
 

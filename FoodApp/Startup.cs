@@ -50,13 +50,14 @@ namespace FoodApp
             app.UseAuthentication();
             app.UseAuthorization();
             DbInitializer.Initialize(context, userManager, roleManager).Wait();
-  
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                         name: "default",
                         pattern: "{controller=Recipes}/{action=TopRate}/{id?}");
             });
+            
         }
     }
 }
